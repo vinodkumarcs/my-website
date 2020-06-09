@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Form Validation</title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+
+		<script src="jquery-ui/jquery-ui.js"></script>
+                <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+				
+	</head>
+
+	<body>
+
+		<div id="div1" style="height:200px;width:300px;background-color:yellow">
+			<p id="para1" > This will also resize blue box. </p>
+			
+		</div>
+
+
+
+		<script type="text/javascript" >
+			// Use call back function when size of div is resized beyond 400px
+			// Note that this event fires while resizing and does not wait until we end resizing.
+	                // So once it triggeres at 401px it keeps triggerring and does not allow to reduce or increase the size.
+			// To invoke callback function on end of resize use stop event instead of resize as {stop:function(){}}		
+			$( "#div1" ).resizable( {resize:function() { 
+				if ( $("#div1").width() > 600 )
+				{
+					alert("You crossed width 600 px");
+				}
+
+
+			 }
+			});
+
+
+			
+		</script>
+	
+
+	</body>
+</html>
+
+
+
+
+
+

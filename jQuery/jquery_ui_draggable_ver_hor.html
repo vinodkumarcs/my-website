@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Form Validation</title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+
+		<script src="jquery-ui/jquery-ui.js"></script>
+                <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+				
+	</head>
+
+	<body>
+
+		<div id="draggable1">
+			<p> <b>Drag me vertically </b></p>
+		</div>
+		<div id="draggable2">
+			<p> <b>Drag me Horizontally </b></p>
+		</div>
+
+		<script type="text/javascript" >
+ 			$( "#draggable1" ).draggable({ axis: "y" });
+			$( "#draggable2" ).draggable({ axis: "x" });
+		</script>
+	
+
+	</body>
+</html>
+
+
+
+
+
+

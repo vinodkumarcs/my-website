@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Form Validation</title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+
+		<script src="jquery-ui/jquery-ui.js"></script>
+                <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+				
+	</head>
+
+	<body>
+
+		<div id="div1" style="height:50px;width:50px;background-color:yellow">  
+   		</div>
+
+		<div id="div2" style="height:200px;width:300px;background-color:green"> 
+		</div>
+			
+
+		<script type="text/javascript" >
+			// Make this div draggable
+			$( "#div1" ).draggable();
+
+			// Make this div droppable with a call back function when drop event occurs
+			// Droppable means being able to detect when and another element is dropped within it's boundary.
+
+			$( "#div2" ).droppable(    {  drop:function(event,ui) 
+                                                           {
+								alert("Dropped");
+							   }
+                                                   }  
+                                              );
+
+
+
+			
+		</script>
+	
+
+	</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Form Validation</title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+
+		<script src="jquery-ui/jquery-ui.js"></script>
+                <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+				
+	</head>
+
+	<body>
+
+		<div id="div1" style="height:200px;width:300px;background-color:yellow">
+			<p id="para1" > This will also resize blue box. </p>
+			
+		</div>
+
+		<div id="div2" style="height:200px;width:300px;background-color:blue">
+			<p id="para2" > This resizes with Yellow Box </p>
+			
+		</div>
+
+		<script type="text/javascript" >
+			// rezize div2 when div1 is resized			
+			$( "#div1" ).resizable( {grid:50, alsoResize:"#div2"});
+
+			// resize div1 when div2 is resized
+			$( "#div2" ).resizable( {grid:50, alsoResize:"#div1"});;
+			
+		</script>
+	
+
+	</body>
+</html>
+
+
+
+
+
+

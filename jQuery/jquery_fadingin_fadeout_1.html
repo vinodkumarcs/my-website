@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+	<head>
+		<title> jQuery Fading Items </title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+
+		<style type="text/css" >
+
+			#myPara
+			{
+				display:none;
+
+			}
+		</style>
+		
+	</head>
+
+	<body>
+
+		
+		<button id="toggle"> Toggle </button>
+		<p id="myPara" > Good night, good night! parting is such sweet sorrow, That I shall say good night till it be morrow./<p>
+
+		<script type="text/javascript" >
+
+			// Clicking on circle or any of the two squares part of the <div> tag triggers this function.
+			$("#toggle").click( function () {
+
+				if ( $("#myPara").css("display") == "none" )				
+				{
+					$("#myPara").fadeIn(5000);  
+				}
+				else
+				{
+					$("#myPara").fadeOut(5000);  
+				}
+			})
+
+		</script>
+
+	
+
+	</body>
+</html>
+
+
+
+
+
+

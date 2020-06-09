@@ -1,0 +1,85 @@
+<!doctype=html>
+
+<html>
+
+	<head>
+
+		<title>	Playing with HTML</title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<style type="text/css" >
+
+			#div1{
+				background-color:#999966;
+				height:40px;				
+				margin:0 auto;												
+
+			}
+
+			#buttonContainer{
+				
+				height:40px;
+				margin:0 auto;
+				width:230px;				
+				background-color:blue;		
+			}
+			.subDiv{			
+				float:left;
+				padding:5px;
+				border-left:1px solid green;
+				border-top:1px solid green;
+				border-bottom:1px solid green;
+				height:15px;
+				margin-top:5px;								
+			}
+
+			#HTML{
+				border-top-left-radius: 4px;
+				border-bottom-left-radius: 4px;
+				
+			}
+
+
+			#Output{
+				border-top-right-radius: 4px;
+				border-bottom-right-radius: 4px;
+				border-right:1px solid green;
+				
+			}
+
+		</style>
+
+	</head>
+
+	<body>
+		<div  id="div1" >
+
+			<div id="buttonContainer"> 
+				<div id="HTML" class="subDiv" > HTML </div>
+				<div id="CSS" class="subDiv" > CSS </div>
+				<div id="Javascript" class="subDiv" > Javascript </div>
+				<div id="Output" class="subDiv" > Output </div>
+			</div>
+
+			
+
+		</div>
+		<button id="myButton"> Press me </button>
+
+		<script type="text/javascript">	
+			document.getElementById("myButton").onclick=function(){ 
+
+				bcw=$('#buttonContainer').css("width");  
+				bch=$('#buttonContainer').css("height");  
+                            
+				alert("bcw= " +bcw + " bch= " + bch);
+
+			}
+			
+		</script>
+
+
+	</body>
+
+
+
+</html>

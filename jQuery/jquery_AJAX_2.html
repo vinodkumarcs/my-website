@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+	<head>
+		<title>AJAX</title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+		
+	</head>
+
+	<body>
+
+		<p id="myPara" > </p>
+
+
+		<script type="text/javascript" >
+
+			$.ajax("info.txt").done(function(data){
+ 
+			   $("#myPara").html(data);			
+
+			}).fail(function() { 
+
+			   alert("Could not get Data");
+			});
+
+		</script>
+
+	
+
+	</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Form Validation</title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+
+		<script src="jquery-ui/jquery-ui.js"></script>
+                <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+				
+	</head>
+
+	<body>
+
+		<div id="draggable1">
+			<p> <b>Drag me vertically </b></p>
+		</div>
+
+		<div style="height:200px; width:500px; background-color:yellow;" >
+			<p id="draggable2"> Stuck in the box but can move vertically </p>			
+		</div>
+
+		<div  style="height:200px; width:500px; background-color:green;" >
+			<span id="draggable3"> I am stuck in the box but can move any whichever way </span>			
+		</div>
+
+		<script type="text/javascript" >
+ 			$("#draggable1" ).draggable({ axis: "y" });
+
+			// You'll notice this element is draggable in in it's parent container <div> only vertically
+			// because a paragraph <p> streches all the way to the length of the <div>
+			// even though the actual text spans less than <div> width
+			$("#draggable2" ).draggable({ containment: "parent" });
+
+			// This can move in any direction withing it's parent container <div>
+			// as this is a <span> element.
+
+			$("#draggable3" ).draggable({ containment: "parent" });
+
+
+
+
+		</script>
+	
+
+	</body>
+</html>
+
+
+
+
+
+

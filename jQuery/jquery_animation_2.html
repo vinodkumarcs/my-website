@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+	<head>
+		<title> jQuery Fading Items </title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+
+		<style type="text/css" >
+
+			#Circle 
+			{
+				background-color:green;
+				height:100px;
+				width:100px;
+				border-radius:50%;
+				margin:20px;								
+			}
+
+
+
+		</style>
+		
+	</head>
+
+	<body>
+
+		<div id="Circle" >       </div>
+
+
+		<script type="text/javascript" >
+
+			// Use Callback function to change the Background Color at the end of Animation			
+			$("#Circle").click( function () {				
+				$(this).animate({width:"500px",
+						 height:"400px",
+						 marginLeft:"100px",
+						 marginTop:"100px",
+						 backgroundColor:"red"},2000, function() {
+                                                 	$(this).css("background-color","red")
+                                                 } 
+
+                                                );
+			})
+
+		</script>
+
+	
+
+	</body>
+</html>
+
+
+
+
+
+

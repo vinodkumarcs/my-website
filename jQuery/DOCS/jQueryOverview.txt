@@ -1,0 +1,21 @@
+
+Calling pre-defined jQuery functions
+------------------------------------
+
+$.function_name 
+
+eg:  
+$.isNumeric(some_value);
+
+
+Hiding & Displaying an HTML element
+-------------------------------------
+
+$("#id_name").show()
+$("#id_name").hide()
+
+eg:
+$("#successMessage").show();
+$("#errorMessage").hide();	
+
+		

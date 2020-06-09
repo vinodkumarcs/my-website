@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+	<head>
+		<title> jQuery </title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+
+		<style type="text/css" >
+
+			#Circle 
+			{
+				background-color:green;
+				height:100px;
+				width:100px;
+				border-radius:50%;
+				margin:20px;								
+			}
+
+			.Square
+			{
+				background-color:red;
+				height:100px;
+				width:100px;
+				margin:20px;								
+			}
+
+		</style>
+		
+	</head>
+
+	<body>
+
+		<div id="Circle" >       </div>
+		<div class="Square" id="Square1" >    </div>
+		<div class="Square" id="Square2" >    </div>
+		
+
+		<script type="text/javascript" >
+
+			// Clicking on circle or any of the two squares part of the <div> tag triggers this function.
+			$("div").click( function () {				
+				// this ->  refers to element that is clicked
+				element=$(this).attr("id");
+                                alert("You clicked the element " + element );
+			})
+
+		</script>
+
+	
+
+	</body>
+</html>
+
+
+
+
+
+

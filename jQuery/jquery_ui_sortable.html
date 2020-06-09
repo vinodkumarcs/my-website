@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+	<head>
+		<title>jQuery UI Accordion </title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+
+		<script src="jquery-ui/jquery-ui.js"></script>
+                <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+
+		<style>
+			#sortable { list-style-type: none; margin: 0; padding: 0; width: 60%; }
+		</style>
+				
+	</head>
+
+	<body>
+		<ul id="sortable">
+			<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Apple</li>
+			<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Mango</li>
+			<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Orange</li>
+			<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Blueberry</li>
+			<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Guava</li>
+			<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Custard Apple</li>
+			<li class="ui-state-default"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span>Cherry</li>
+		</ul>
+
+ 
+
+		<script type="text/javascript" >
+			// Further Reading: https://jqueryui.com/sortable/
+			$( "#sortable" ).sortable();
+			$( "#sortable" ).disableSelection();
+					
+		</script>	
+
+	</body>
+</html>
+
+
+
+
+
+

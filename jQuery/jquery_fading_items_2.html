@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+	<head>
+		<title> jQuery Fading Items </title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+		
+	</head>
+
+	<body>
+
+		<p id="myPara" > Good night, good night! parting is such sweet sorrow, That I shall say good night till it be morrow./<p>
+		<button> Fader </button>
+
+		<script type="text/javascript" >
+
+			// Clicking on circle or any of the two squares part of the <div> tag triggers this function.
+			$("button").click( function () {				
+				
+				$("#myPara").fadeOut("slow");  // fades out the items gradually instead of sudden disappearance
+			})
+
+		</script>
+
+	
+
+	</body>
+</html>
+
+
+
+
+
+

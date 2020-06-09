@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+	<head>
+		<title> jQuery Fading Items </title>
+		<script type="text/javascript" src="jquery.min.js"></script>
+
+		<style type="text/css" >
+
+			#Circle 
+			{
+				background-color:green;
+				height:100px;
+				width:100px;
+				border-radius:50%;
+				margin:20px;								
+			}
+
+
+
+		</style>
+		
+	</head>
+
+	<body>
+
+		<div id="Circle" >       </div>
+
+
+		<script type="text/javascript" >
+
+			// Note that the Background color does not change with Animation. May need some additional Plugins			
+			$("#Circle").click( function () {				
+				$(this).animate({width:"500px",
+						 height:"400px",
+						 marginLeft:"100px",
+						 marginTop:"100px",
+						 backgroundColor:"red"},2000);
+			})
+
+		</script>
+
+	
+
+	</body>
+</html>
+
+
+
+
+
+
